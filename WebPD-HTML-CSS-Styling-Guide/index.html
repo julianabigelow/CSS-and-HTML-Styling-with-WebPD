@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <!-- Start and Loading feature -->
+        <button type="button" class="myButton" id="start"> Start </button>
+        <div id="loading"> Loading ... </div>
+        <!-- Body of Application -->
+        <h1>A Simple Synth</h1>
+        <p>Use the sliders below to make a sustained sound.</p>
+        <h2>Frequency (0-500)</h2>
+            <div id="slider">
+            <input type="range" value="0" min="0" max="500" id="freqSlider" />
+        </div>
+        <h2>Volume (0-50)</h2>
+            <div id="slider">
+            <input type="range" value="0" min="0" max="50" id="volumeSlider" />
+        </div>
+       
+        <h2>Trigger Single Note</h2>
+            <div id="button">
+                <button type="button" class="myButton" id="triggerNote"> Trigger </button>
+            </div>
+        <script src="webpd-runtime.js"></script>
+        <script src="index.js"></script>
+        <script src="initWebPD.js"></script>
+    </body>
+</html>
